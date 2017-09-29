@@ -7,7 +7,7 @@ angular.module('app')
             dataStorageService.getLatestEntry = function (carPark) {
                 return $http({
                     method: 'get',
-                    url: 'http://carparks-openwro.rhcloud.com/carparks/latestEntry/' + carPark
+                    url: 'http://smartcity-backend-os3-gdziezaparkuje.a3c1.starter-us-west-1.openshiftapps.com/carparks/latestEntry/' + carPark
                     //url: envConfig.restUrl + '/latestEntry/' + carPark
                 });
             };
@@ -15,7 +15,7 @@ angular.module('app')
             dataStorageService.getLatestEntries = function () {
                 return $http({
                     method: 'get',
-                    url: 'http://carparks-openwro.rhcloud.com/carparks/latestEntries/'
+                    url: 'http://smartcity-backend-os3-gdziezaparkuje.a3c1.starter-us-west-1.openshiftapps.com/carparks/latestEntries/'
                     //url: envConfig.restUrl + '/latestEntry/' + carPark
                 });
             };
