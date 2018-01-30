@@ -5,7 +5,7 @@ angular.module('app')
 
         .controller('carParkCtrl', ['$scope', '$interval', 'dateFilter', 'carParkDataService', function ($scope, $interval, dateFilter, carParkDataService) {
               
-            var restRequestInterval = 300000; //every 5 min.
+            var restRequestInterval = 60000; //every 1 min.
             var timeUpdateInterval = 1000; //every 1 sec.
             var milisInMin = 60000;
             var milisInSec = 1000;
